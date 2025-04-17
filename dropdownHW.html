@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<title>Dropdowns and Accordions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+  <h2 class="w3-blue w3-center"> Fun Facts About Video Games</h2>
+
+  <!-- Question #1 -->
+  <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-teal w3-left-align"
+  style="width: 50%">1. What was the first video game ever made? &#9660;</button>
+  <div id="Demo1" class="w3-container w3-hide">
+    <h4>Answer: Pong, released by Atari in 1972.</h4>
+  </div>
+  <br><br>
+
+  <!-- Question #2 -->
+  <button onclick="myFunction('Demo2')" class="w3-btn w3-block w3-pale-blue w3-left-align"
+  style="width: 50%">2. What game is the best-selling of all time? &#9660;</button>
+  <div id="Demo2" class="w3-container w3-hide">
+    <h4>Answer: Minecraft, with over 300 million copies sold</h4>
+  </div>
+  <br><br>
+
+  <!-- Question #3 -->
+  <button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-cyan w3-left-align"
+  style="width: 50%">3. Which character is Nintendo’s iconic mascot? &#9660;</button>
+  <div id="Demo3" class="w3-container w3-hide">
+    <h4>Answer: Mario, first appearing in Donkey Kong (1981).</h4>
+  </div>
+  <br><br>
+
+  <!-- Question #4 -->
+  <button onclick="myFunction('Demo4')" class="w3-btn w3-block w3-aqua w3-left-align"
+  style="width: 50%">4. What is the longest-running video game series? &#9660;</button>
+  <div id="Demo4" class="w3-container w3-hide">
+    <h4>Answer: The Mario series.</h4>
+  </div>
+  <br><br>
+
+  <!-- Question #5 -->
+  <button onclick="myFunction('Demo5')" class="w3-btn w3-block w3-light-blue w3-left-align"
+  style="width: 50%">5. Which game helped popularize the battle royale genre? &#9660;</button>
+  <div id="Demo5" class="w3-container w3-hide">
+    <h4>Answer: Fortnite, following PUBG's success.</h4>
+  </div>
+  <br><br>
+
+  <!-- Footer -->
+  <div>
+    <footer class="w3-blue w3-center w3-padding">ClassYapper &copy; 2025</footer>
+  </div>
+
+  <!-- DO NOT CHANGE THE SCRIPT -->
+  <script>
+  function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  </script>
+
+</body>
+</html>
