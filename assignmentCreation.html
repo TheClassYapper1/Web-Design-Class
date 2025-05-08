@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Assignment</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <head>
+<body>
+<div class="w3-container">
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="https://www.lamborghini.com/en-en" class="w3-bar-item w3-button">Lamborghini</a>
+  <a href="https://www.toyota.com/" class="w3-bar-item w3-button">Toyota</a>
+  <a href="https://www.ford.com/" class="w3-bar-item w3-button">Ford</a>
+</div>
+
+<div id="main">
+
+<div class="w3-teal">
+  <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1>Famous Car Brands</h1>
+  </div>
+</div>
+<br>
+<img src="myassign/lambo.jpg" alt="Lambo" style="width:50%">
+
+<div class="w3-container">
+<h2>Lamborghini</h2>
+<p>Lamborghini or colloquially Lambo, is an Italian manufacturer of luxury sports cars and SUVs based in Sant'Agata Bolognese. The company is owned by the Volkswagen Group through its subsidiary Audi.</p>
+</div>
+
+<img src="myassign/toyota.jpg" alt="Toyoda" style="width:50%">
+
+<div class="w3-container">
+  <h2>Toyota</h2>
+  <p>Toyota is a Japanese multinational automotive manufacturer headquartered in Toyota City, Aichi, Japan. It was founded by Kiichiro Toyoda and incorporated on August 28, 1937. Toyota is the largest automobile manufacturer in the world, producing about 10 million vehicles per year.</p>
+</div>
+
+<img src="myassign/ford.jpg" alt="Ford" style="width:50%">
+
+<div class="w3-container">
+  <h2>Ford</h2>
+  <p>Ford Motor Company (commonly known as Ford) is an American multinational automobile manufacturer headquartered in Dearborn, Michigan, United States. It was founded by Henry Ford and incorporated on June 16, 1903.</p>
+</div>
+
+</div>
+</div>
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</body>
+</html>
